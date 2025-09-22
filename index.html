@@ -357,7 +357,7 @@
 
         function updateStats(data) {
             document.getElementById('playerCount').textContent = data.count_player ? data.count_player.toLocaleString() : '0';
-            document.getElementById('banRate').textContent = `${(data.ban_rate * 100).toFixed(2)}%`;
+            document.getElementById('banRate').textContent = `${(data.ban_rate).toFixed(2)}%`;
             document.getElementById('bannedPlayers').textContent = data.ban_player;
             document.getElementById('nukedWorlds').textContent = data.nuke_world;
         }
